@@ -6,11 +6,11 @@ import { Input } from "@/components/ui/input"
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
-import { Search, X, Menu, MoreHorizontal, Plus   } from 'lucide-react'
+import { Search, Menu, MoreHorizontal, Plus   } from 'lucide-react'
 
 export default function CloudflareUserLookup() {
   const [showAdvanced, setShowAdvanced] = useState(false)
-  const [searchResults, setSearchResults] = useState<string[]>([])
+  const [searchResults] = useState<string[]>([])
 
   return (
     <div className="min-h-screen bg-[#FFFFFF]">
